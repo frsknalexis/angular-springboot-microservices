@@ -36,6 +36,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.cors().and()
 					//starts authorizing config	
 					.authorizeRequests()
+					//ignoring the guest's urls...
 					.antMatchers("/resources/**", "/error", "/service/**").permitAll()
 					//authenticate all remaining URLs
 					.anyRequest().fullyAuthenticated()

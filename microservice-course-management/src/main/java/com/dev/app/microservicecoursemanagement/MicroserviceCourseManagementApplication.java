@@ -9,8 +9,8 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-@EnableFeignClients
 @EnableDiscoveryClient
+@EnableFeignClients
 public class MicroserviceCourseManagementApplication {
 
 	public static void main(String[] args) {
